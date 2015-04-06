@@ -1,2 +1,2 @@
 # circuitrunners.github.io
-The CircuitRunners website
+The newly redesigned CircuitRunners website. Currently a work in progress.
