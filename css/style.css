@@ -4,7 +4,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 .site-name {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Play', sans-serif;
 }
 html,
 body {
@@ -705,7 +705,7 @@ textarea {
 	left: 50%;
 	top: 50%;
 	font-size: 18px;
-	line-height: 1x;
+	line-height: 1;
 	color: #ffffff;
 	margin-top: -8px;
 	margin-left: -8px;
