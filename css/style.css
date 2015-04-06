@@ -511,7 +511,7 @@ textarea {
 	background-color: rgba(0, 0, 0, 0.95);
 	padding: 5px 0;
 }
-.header {
+.navbar-fixed-top {
 	z-index: 4;
 }
 .fixed-header-on .site-name {
