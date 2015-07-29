@@ -1,0 +1,11 @@
+{
+  "elements": {},
+  "attributes": {
+    "async": {
+      "context": "link"
+    },
+    "aria-expanded": {
+      "context": "button"
+    }
+  }
+}

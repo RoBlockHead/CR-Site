@@ -1,117 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<title>CircuitRunners</title>
-		<meta name="description" content="CircuitRunners">
-		<meta name="author" content="CircuitRunners">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CircuitRunners</title>
+    <meta name="description" content="CircuitRunners">
+    <meta name="author" content="CircuitRunners">
 
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic' async rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700' async rel='stylesheet' type='text/css'>
 
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" async rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+    <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <div class="col-md-4 col-xs-4">
+                <img src="images/logo-modern.png" alt="logo">
+              </div>
+              <div class="col-md-8 col-xs-4">
+                <b>circuit</b>runners
+              </div>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#teams">Teams</a></li>
+              <li><a href="#">Outreach</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
-		<link href="css/animations.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-	</head>
+      <header class="jumbotron">
+        <div class="container">
+          <div class="col-md-8">
+            <h1 class="text-left">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
+            <p class="lead text-left">We're the CircuitRunners and we don't just build robots.</p>
+          </div>
+        </div>
+      </header>
 
-	<body class="no-trans">
-		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
-		<header class="header fixed clearfix navbar navbar-fixed-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-xs-4 col-sm-4">
-						<div class="header-left clearfix">
-							<div class="logo smooth-scroll">
-								<a href="#banner"><img id="logo" style="height: 5em" src="images/logo-modern.png" alt="CircuitRunners"></a>
-							</div>
-
-							<!-- name-and-slogan -->
-							<div class="site-name-and-slogan smooth-scroll">
-								<div class="site-name"><a href="#banner"><span style="color: #4CAF50; font-weight: bold">circuit</span><span style="color: #8BC34A">runners</span></a></div>
-							</div>
-
-						</div>
-						<!-- header-left end -->
-
-					</div>
-					<div class="col-md-8 col-xs-8 col-sm-8">
-
-						<!-- header-right start -->
-						<!-- ================ -->
-						<div class="header-right clearfix">
-
-							<!-- main-navigation start -->
-							<!-- ================ -->
-							<div class="main-navigation animated">
-
-								<!-- navbar start -->
-								<!-- ================ -->
-								<nav class="navbar navbar-default" role="navigation">
-									<div class="container-fluid">
-
-										<!-- Toggle get grouped for better mobile display -->
-										<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-												<span class="sr-only">Toggle navigation</span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</button>
-										</div>
-
-										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-											<ul class="nav navbar-nav navbar-right">
-												<li><a href="#teams">Teams</a></li>
-												<li><a href="http://circuitrunners.com/outreach/">Outreach</a></li>
-                        <li><a href="http://circuitrunners.com/category/general/">News</a></li>
-                        <li><a href="http://circuitrunners.com/about/">About</a></li>
-											</ul>
-										</div>
-
-									</div>
-								</nav>
-								<!-- navbar end -->
-
-							</div>
-							<!-- main-navigation end -->
-
-						</div>
-						<!-- header-right end -->
-
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- header end -->
-
-
-
-		<!-- banner start -->
-		<!-- ================ -->
-		<div id="banner" class="banner head-banner">
-			<div class="banner-image"></div>
-			<div class="banner-caption">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn" style="text-shadow: 0 0 10px #000">
-							<h1 class="text-left">MOVE FROM POTENTIAL TO <span>KINETIC</span>.</h1>
-							<p class="lead text-left">We're the CircuitRunners and we don't just build robots.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- banner end -->
-
-    <!-- section start -->
-    <!-- ================ -->
-    <div class="section translucent-bg pb-clear" style="background-image: url('images/circuitrunners.jpg'); background-position: center" id="teamsb">
-      <div class="container object-non-visible" data-animation-effect="fadeIn">
-        <h1 id="teams" class="title text-center">Teams</h1>
+    <div id="teamsb">
+      <div class="container">
+        <h1 id="teams" class="text-center">Teams</h1>
         <div class="space"></div>
         <div class="row">
         	<a href="http://circuitrunners.com/teams/frc/" style="text-decoration: none">
@@ -167,48 +113,21 @@
           </div>
           </a>
         </div>
-			</div>
-		</div>
+      </div>
+    </div>
 
-			<!-- .subfooter start -->
-			<!-- ================ -->
-			<div class="subfooter">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<p class="text-center">© 2015 CircuitRunners</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .subfooter end -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center lead">© 2015 CircuitRunners</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		</footer>
-		<!-- footer end -->
-
-		<!-- JavaScript files placed at the end of the document so the pages load faster
-		================================================== -->
-		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-		<!-- Isotope javascript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.1/isotope.pkgd.min.js"></script>
-
-		<!-- Backstretch javascript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-
-		<!-- Appear javascript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
-
-		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="js/template.js"></script>
-
-		<!-- Custom Scripts -->
-		<script type="text/javascript" src="js/custom.js"></script>
-
-	</body>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    </body>
 </html>
