@@ -130,17 +130,15 @@ header p {
 }
 #teamsb #teams {
   color: #fff;
-  text-shadow: 0px 0px 10px #000
 }
 #teamsb a {
-  color: #fff;
-  text-shadow: 0px 0px 10px #000
+  color: #000;
+}
+#teamsb .panel {
+  height: 96px;
 }
 footer {
   margin-top: 48px;
-}
-.media-left {
-  background: rgba(255, 255, 255, 0.4);
 }
 .media-body {
   padding-left: 10px
