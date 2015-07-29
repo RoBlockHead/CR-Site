@@ -20,10 +20,12 @@ header .lead {
 }
 header h1 {
   color: #fff !important;
+  font-weight: 700;
 }
 header p {
   color: #fff;
   font-family: 'Roboto';
+  font-weight: 300 !important;
 }
 .special {
   color: #4CAF50;
@@ -76,7 +78,13 @@ header p {
   color: #8BC34A
 }
 .navbar-default .navbar-brand {
-  color: #777
+  color: #777;
+  font-size: 22px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 .navbar-default .navbar-brand:hover {
   color: #999
@@ -101,6 +109,7 @@ header p {
   background-image: url('../images/circuitrunners.jpg');
   background-size: cover;
   background-position: center;
+  padding: 48px 0;
 }
 #teamsb #teams {
   color: #fff;
@@ -112,4 +121,13 @@ header p {
 }
 footer {
   margin-top: 48px;
+}
+.media-left {
+  background: rgba(255, 255, 255, 0.7);
+}
+.media-body {
+  padding-left: 10px
+}
+#teamsb .col-md-6 {
+  margin-top: 72px;
 }
