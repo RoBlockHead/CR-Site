@@ -1,8 +1,11 @@
-header,body,html {
+.filled,body,html {
   height: 100%
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto'
+}
+.go-down {
+  margin-top: 84px !important;
 }
 header {
   background: url('../images/banner.jpg');
