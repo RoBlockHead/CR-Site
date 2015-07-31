@@ -94,7 +94,7 @@ header p {
   color: #8BC34A
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #aaa;
   font-size: 22px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -103,7 +103,7 @@ header p {
   transition:.5s;
 }
 .navbar-default .navbar-brand:hover {
-  color: #999
+  color: #ccc
 }
 .navbar-brand b {
   color: #4CAF50
@@ -136,6 +136,7 @@ header p {
 }
 #teamsb .panel {
   height: 96px;
+  padding: 6px;
 }
 footer {
   margin-top: 48px;
