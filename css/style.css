@@ -1,17 +1,23 @@
 .filled,body,html {
   height: 100%
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto'
+.filled {
+  background-attachment: fixed
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Roboto', sans-serif;
 }
 .go-down {
-  margin-top: 84px !important;
+  margin-top: 84px !important
 }
 header {
   background: url('../images/banner.jpg');
   background-size: cover;
   padding-top: 20% !important;
-  text-shadow: 0px 0px 10px #000
+  text-shadow: 0 0 10px #000
+}
+#teamsb a {
+    text-decoration: none
 }
 .jumbotron {
   margin: 0
@@ -20,11 +26,11 @@ header {
   margin: 0;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%)
 }
 @media (min-width: 961px) {
   .header {
-    width: 40%;
+    width: 40%
   }
 }
 header .lead {
@@ -36,26 +42,25 @@ header .lead {
 }
 header h1 {
   color: #fff !important;
-  font-weight: 700;
+  font-weight: 700
 }
 header p {
   color: #fff;
-  font-family: 'Roboto';
-  font-weight: 300 !important;
+  font-weight: 300 !important
 }
 .special {
-  color: #4CAF50;
+  color: #4CAF50
 }
 .navbar {
   background: rgba(0, 0, 0, 0.6);
-  border: none;
+  border: none
 }
 .navbar-toggle {
   margin-top: 14px
 }
 @media (max-width:767px) {
   .navbar-right {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6)
   }
   #navbar {
     margin-top: 6px;
@@ -65,7 +70,7 @@ header p {
 .navbar .navbar-right {
   padding-top: 6px;
   padding-right: 48px;
-  font-size: 1.6rem;
+  font-size: 1.6rem
 }
 .navbar-default .navbar-nav > .active > a {
   background: none;
@@ -74,7 +79,7 @@ header p {
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:.5s
 }
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
@@ -87,7 +92,7 @@ header p {
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:.5s
 }
 .navbar-default .navbar-nav > li > a:hover {
   background: none;
@@ -100,7 +105,7 @@ header p {
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:.5s
 }
 .navbar-default .navbar-brand:hover {
   color: #ccc
@@ -112,38 +117,38 @@ header p {
   color: #8BC34A
 }
 .navbar-brand img {
-  height: 32px;
+  height: 32px
 }
 .navbar-brand .col-md-8 {
   padding-top: 6px;
-  padding-left: 0;
+  padding-left: 0
 }
 .navbar-brand .col-md-4 {
-  padding-right: 0;
+  padding-right: 0
 }
 #teamsb {
   background-image: url('../images/circuitrunners.jpg');
   background-color: #000;
   background-size: cover;
   background-position: center;
-  padding: 48px 0;
+  padding: 48px 0
 }
 #teamsb #teams {
-  color: #fff;
+  color: #fff
 }
 #teamsb a {
-  color: #000;
+  color: #000
 }
 #teamsb .panel {
   height: 96px;
-  padding: 6px;
+  padding: 6px
 }
 footer {
-  margin-top: 48px;
+  margin-top: 48px
 }
 .media-body {
   padding-left: 10px
 }
 #teamsb .col-md-6 {
-  margin-top: 72px;
+  margin-top: 72px
 }

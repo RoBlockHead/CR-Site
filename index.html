@@ -7,15 +7,18 @@
     <title>CircuitRunners</title>
     <meta name="description" content="CircuitRunners">
     <meta name="author" content="CircuitRunners">
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic' async rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Play:400,700' async rel='stylesheet' type='text/css'>
-
-    <link href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" async rel="stylesheet">
-    <link href="css/style.css" async rel="stylesheet">
+      <!--[if IE]>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic">
+      <![endif]-->
   </head>
     <body>
+      <!--[if !IE]> -->
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" lazyload>
+        <link rel="stylesheet" href="css/style.css" lazyload>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" lazyload>
+      <!-- <![endif]-->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,7 +49,7 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <header class="jumbotron filled" style="background-attachment: fixed">
+      <header class="jumbotron filled">
         <div class="container">
           <div class="header">
             <h1 class="text-left">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
@@ -60,11 +63,11 @@
           <h1 id="teams" class="text-center">Teams</h1>
           <div class="space"></div>
           <div class="row">
-                  <a href="http://circuitrunners.com/teams/frc/" style="text-decoration: none">
+                  <a href="http://circuitrunners.com/teams/frc/">
             <div class="col-md-6 panel" id="frc">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/FIRST_Robotics_Competition_%28logo%29.png" alt=""  style="width: 64px">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/FIRST_Robotics_Competition_%28logo%29.png" alt="FRC"  style="width: 64px">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">FRC</h3>
@@ -73,11 +76,11 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/grits/" style="text-decoration: none">
+            <a href="http://circuitrunners.com/teams/grits/">
             <div class="col-md-6 panel" id="grits">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="images/GRITS.png" alt=""  style="width: 128px">
+                  <img src="images/GRITS.png" alt="GRITS"  style="width: 128px">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">GRITS</h3>
@@ -86,11 +89,11 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/ftc/" style="text-decoration: none">
+            <a href="http://circuitrunners.com/teams/ftc/">
             <div class="col-md-6 panel" id="ftc">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/FIRST_Tech_challenge_logo.png" alt=""  style="width: 64px">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/FIRST_Tech_challenge_logo.png" alt="FTC"  style="width: 64px">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">FTC</h3>
@@ -99,11 +102,11 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/best/" style="text-decoration: none">
+            <a href="http://circuitrunners.com/teams/best/">
             <div class="col-md-6 panel" id="best">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="images/BEST.png" alt="" style="width: 128px">
+                  <img src="images/BEST.png" alt="BEST" style="width: 128px">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">BEST</h3>
@@ -126,8 +129,8 @@
         </div>
       </footer>
 
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js" defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js" defer></script>
+    <script src="js/custom.js" defer></script>
     </body>
 </html>
