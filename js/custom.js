@@ -29,4 +29,4 @@ $('#ftc').hover(
 
 function defaultBack() {
   $('#teamsb').css('background-image', "url('images/circuitrunners.jpg')");
-};
+}

@@ -127,11 +127,9 @@ header p {
   padding-right: 0
 }
 #teamsb {
-  background-image: url('../images/circuitrunners.jpg');
-  background-color: #000;
-  background-size: cover;
-  background-position: center;
-  padding: 48px 0
+    background-size: cover;
+    background: #000 url('../images/circuitrunners.jpg') center;
+    padding: 48px 0
 }
 #teamsb #teams {
   color: #fff

@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/style.css" lazyload>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" lazyload>
       <!-- <![endif]-->
+      <script src="https://cdn.jsdelivr.net/vvo-lazyload/2.0.5/lazyload.min.js"></script>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,7 +68,7 @@
             <div class="col-md-6 panel" id="frc">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/FIRST_Robotics_Competition_%28logo%29.png" alt="FRC"  style="width: 64px">
+                  <img data-src="images/FRC.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="FRC">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">FRC</h3>
@@ -80,11 +81,11 @@
             <div class="col-md-6 panel" id="grits">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="images/GRITS.png" alt="GRITS"  style="width: 128px">
+                  <img data-src="images/GRITS.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="GRITS">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">GRITS</h3>
-                    <p>GRITS is a Georgia offseason FRC competition that uses the previous year's FRC challenge.</p>
+                    <p>GRITS is a Georgia off-season FRC competition that uses the previous year's FRC challenge.</p>
                 </div>
               </div>
             </div>
@@ -93,7 +94,7 @@
             <div class="col-md-6 panel" id="ftc">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/FIRST_Tech_challenge_logo.png" alt="FTC"  style="width: 64px">
+                  <img data-src="images/FTC.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="FTC">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">FTC</h3>
@@ -106,7 +107,7 @@
             <div class="col-md-6 panel" id="best">
               <div class="media testimonial">
                 <div class="media-left">
-                  <img src="images/BEST.png" alt="BEST" style="width: 128px">
+                  <img data-src="images/BEST.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="BEST">
                 </div>
                 <div class="media-body">
                   <h3 class="media-heading">BEST</h3>
@@ -129,8 +130,10 @@
         </div>
       </footer>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js" defer></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js" defer></script>
-    <script src="js/custom.js" defer></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js" defer></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js" defer></script>
+      <script src="js/custom.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+      <script data-no-instant>InstantClick.init();</script>
     </body>
 </html>
