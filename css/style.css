@@ -17,6 +17,7 @@ header {
   text-shadow: 0 0 10px #000
 }
 #teamsb a {
+    color: #000;
     text-decoration: none
 }
 .jumbotron {
@@ -38,7 +39,9 @@ header .lead {
 }
 .navbar {
   height: 84px;
-  padding-top: 14px
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none
 }
 header h1 {
   color: #fff !important;
@@ -49,11 +52,7 @@ header p {
   font-weight: 300 !important
 }
 .special {
-  color: #4CAF50
-}
-.navbar {
-  background: rgba(0, 0, 0, 0.6);
-  border: none
+  color: #4cae4c
 }
 .navbar-toggle {
   margin-top: 14px
@@ -74,10 +73,7 @@ header p {
 }
 .navbar-default .navbar-nav > .active > a {
   background: none;
-  color: #4CAF50;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
+  color: #4cae4c;
   -webkit-transition:.5s;
   transition:.5s
 }
@@ -88,9 +84,6 @@ header p {
 .navbar-default .navbar-nav > li > a {
   background: none;
   color: #fff;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s
 }
@@ -99,11 +92,8 @@ header p {
   color: #8BC34A
 }
 .navbar-default .navbar-brand {
-  color: #aaa;
+  color: #adadad;
   font-size: 22px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s
 }
@@ -111,7 +101,7 @@ header p {
   color: #ccc
 }
 .navbar-brand b {
-  color: #4CAF50
+  color: #4cae4c
 }
 .navbar-brand:hover b {
   color: #8BC34A
@@ -133,9 +123,6 @@ header p {
 }
 #teamsb #teams {
   color: #fff
-}
-#teamsb a {
-  color: #000
 }
 #teamsb .panel {
   height: 96px;
