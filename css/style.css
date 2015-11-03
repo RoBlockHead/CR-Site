@@ -4,11 +4,11 @@
 .filled {
   background-attachment: fixed
 }
-h1,h2,h3,h4,h5,h6,p {
+body {
     font-family: 'Roboto', sans-serif;
 }
 .go-down {
-  margin-top: 84px !important
+  padding-top: 84px !important
 }
 header {
   background: url('../images/banner.jpg');
@@ -117,8 +117,8 @@ header p {
   padding-right: 0
 }
 #teamsb {
-    background-size: cover;
     background: #000 url('../images/circuitrunners.jpg') center;
+  background-size: cover;
     padding: 48px 0
 }
 #teamsb #teams {
@@ -136,4 +136,42 @@ footer {
 }
 #teamsb .col-md-6 {
   margin-top: 72px
+}
+.interp {
+  position: relative;
+  padding: 30px 0px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  background: #4cae4c linear-gradient(to bottom, #4cae4c 0px, #8BC34A 100%) repeat-x;
+}
+
+.interp.solid {
+  position: relative;
+  padding: 30px 0px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  background: #4cae4c;
+}
+
+.dark {
+  position: relative;
+  padding: 30px 0px;
+  color: #f2f2f2;
+  background: #000
+}
+
+.white {
+  color: #fff
+}
+
+#leadership {
+  text-align: center;
+}
+
+#leadership .hidden-md {
+  height: 128px;
+}
+
+.interp.glass {
+  background: linear-gradient(to bottom, rgba(76,174,76,0.85) 0px, rgba(76,174,76,0.85) 100%);
 }
