@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34d10f5c-eca2-46a1-bd7e-27961c2d8a4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/best.html" afterPath="$PROJECT_DIR$/best.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frc.html" afterPath="$PROJECT_DIR$/frc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ftc.html" afterPath="$PROJECT_DIR$/ftc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grits.html" afterPath="$PROJECT_DIR$/grits.html" />
     </list>
     <ignored path="circuitrunners.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frc.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="frc.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.925926">
-              <caret line="148" column="103" selection-start-line="148" selection-start-column="103" selection-end-line="148" selection-end-column="103" />
+            <state vertical-scroll-proportion="0.42281106">
+              <caret line="182" column="105" selection-start-line="182" selection-start-column="105" selection-end-line="182" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -104,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.593318">
+            <state vertical-scroll-proportion="-19.074074">
               <caret line="79" column="130" selection-start-line="79" selection-start-column="130" selection-end-line="79" selection-end-column="130" />
               <folding />
             </state>
@@ -229,8 +225,8 @@
         <option value="$PROJECT_DIR$/grits.html" />
         <option value="$PROJECT_DIR$/best.html" />
         <option value="$PROJECT_DIR$/ftc.html" />
-        <option value="$PROJECT_DIR$/frc.html" />
         <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/frc.html" />
       </list>
     </option>
   </component>
@@ -240,9 +236,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="y" value="27" />
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -440,7 +435,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5106838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -988,10 +983,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.074074">
+          <caret line="79" column="130" selection-start-line="79" selection-start-column="130" selection-end-line="79" selection-end-column="130" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.925926">
-          <caret line="148" column="103" selection-start-line="148" selection-start-column="103" selection-end-line="148" selection-end-column="103" />
+        <state vertical-scroll-proportion="0.42281106">
+          <caret line="182" column="105" selection-start-line="182" selection-start-column="105" selection-end-line="182" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1023,14 +1026,6 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#11;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#1;n#div#11;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.593318">
-          <caret line="79" column="130" selection-start-line="79" selection-start-column="130" selection-end-line="79" selection-end-column="130" />
-          <folding />
         </state>
       </provider>
     </entry>
