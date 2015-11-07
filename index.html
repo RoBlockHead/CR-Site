@@ -9,6 +9,7 @@
     <meta name="author" content="CircuitRunners">
       <!--[if IE]>
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic">
       <![endif]-->
@@ -16,6 +17,7 @@
     <body>
       <!--[if !IE]> -->
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" lazyload>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css" lazyload>
         <link rel="stylesheet" href="css/style.css" lazyload>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" lazyload>
       <!-- <![endif]-->
@@ -41,16 +43,16 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#teams">Teams</a></li>
-              <li><a href="#">Outreach</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="#teams"><i class="fa fa-group"></i> Teams</a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i> Outreach</a></li>
+              <li><a href="#"><i class="fa fa-newspaper-o"></i> News</a></li>
+              <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
-      <header class="jumbotron filled">
+      <header class="jumbotron filled shade">
         <div class="container">
           <div class="header">
             <h1 class="text-left">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
@@ -77,7 +79,7 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/grits/">
+            <a href="grits.html">
             <div class="col-md-6 panel" id="grits">
               <div class="media testimonial">
                 <div class="media-left">
@@ -90,7 +92,7 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/ftc/">
+            <a href="ftc.html">
             <div class="col-md-6 panel" id="ftc">
               <div class="media testimonial">
                 <div class="media-left">
@@ -103,7 +105,7 @@
               </div>
             </div>
             </a>
-            <a href="http://circuitrunners.com/teams/best/">
+            <a href="best.html">
             <div class="col-md-6 panel" id="best">
               <div class="media testimonial">
                 <div class="media-left">
@@ -120,8 +122,24 @@
         </div>
       </section>
 
+      <section class="dark">
+        <div class="container text-center">
+          <h1>About the CircuitRunners</h1>
+          <a href="about.html" class="btn btn-default">Learn more about us</a>
+        </div>
+      </section>
+
       <footer>
         <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Get the latest</h3>
+              <a href="https://www.facebook.com/circuitrunners" class="fbl"><i class="fa fa-facebook-square fa-fw fa-3x"></i></a>
+              <a href="https://twitter.com/circuitrunners" class="twl"><i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
+              <a href="https://plus.google.com/105905430956699633201/posts" class="gpl"><i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
+              <a href="rss.html" class="rss"><i class="fa fa-rss-square fa-fw fa-3x"></i></a>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-12">
               <p class="text-center lead">© 2015 CircuitRunners</p>
@@ -132,7 +150,6 @@
 
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js" defer></script>
       <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js" defer></script>
-      <script src="js/custom.js" defer></script>
       <script src="https://cdn.jsdelivr.net/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
       <script data-no-instant>InstantClick.init();</script>
     </body>

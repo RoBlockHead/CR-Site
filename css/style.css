@@ -1,9 +1,6 @@
 .filled,body,html {
   height: 100%
 }
-.filled {
-  background-attachment: fixed
-}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -13,12 +10,14 @@ body {
 header {
   background: url('../images/banner.jpg');
   background-size: cover;
-  padding-top: 20% !important;
-  text-shadow: 0 0 10px #000
+  padding-top: 20% !important
 }
 #teamsb a {
     color: #000;
     text-decoration: none
+}
+.shade {
+  text-shadow: 0 0 10px #000
 }
 .jumbotron {
   margin: 0
@@ -49,7 +48,7 @@ header h1 {
 }
 header p {
   color: #fff;
-  font-weight: 300 !important
+  font-weight: 400 !important
 }
 .special {
   color: #4cae4c
@@ -74,7 +73,6 @@ header p {
 .navbar-default .navbar-nav > .active > a {
   background: none;
   color: #4cae4c;
-  -webkit-transition:.5s;
   transition:.5s
 }
 .navbar-default .navbar-nav > .active > a:hover {
@@ -84,7 +82,6 @@ header p {
 .navbar-default .navbar-nav > li > a {
   background: none;
   color: #fff;
-  -webkit-transition:.5s;
   transition:.5s
 }
 .navbar-default .navbar-nav > li > a:hover {
@@ -94,7 +91,6 @@ header p {
 .navbar-default .navbar-brand {
   color: #adadad;
   font-size: 22px;
-  -webkit-transition:.5s;
   transition:.5s
 }
 .navbar-default .navbar-brand:hover {
@@ -117,12 +113,10 @@ header p {
   padding-right: 0
 }
 #teamsb {
-    background: #000 url('../images/circuitrunners.jpg') center;
-  background-size: cover;
-    padding: 48px 0
+  padding: 48px 0
 }
 #teamsb #teams {
-  color: #fff
+  /*color: #fff*/
 }
 #teamsb .panel {
   height: 96px;
@@ -174,4 +168,25 @@ footer {
 
 .interp.glass {
   background: linear-gradient(to bottom, rgba(76,174,76,0.85) 0px, rgba(76,174,76,0.85) 100%);
+}
+
+footer a {
+  color: #333;
+  transition:.5s
+}
+
+.fbl:hover {
+  color: #3b5998
+}
+
+.twl:hover {
+  color: #00aced
+}
+
+.gpl:hover {
+  color: #dd4b39
+}
+
+.rss:hover {
+  color:  #ff9900
 }
