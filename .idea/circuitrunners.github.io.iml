@@ -9,5 +9,6 @@
     <orderEntry type="library" name="jquery-1.11.3" level="application" />
     <orderEntry type="library" name="lazyload" level="application" />
     <orderEntry type="library" name="instantclick" level="application" />
+    <orderEntry type="library" name="jquery.smooth-scroll" level="application" />
   </component>
 </module>

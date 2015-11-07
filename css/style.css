@@ -7,9 +7,11 @@ body {
 .go-down {
   padding-top: 84px !important
 }
-header {
+#header {
   background: url('../images/banner.jpg');
   background-size: cover;
+}
+header {
   padding-top: 20% !important
 }
 #teamsb a {
@@ -145,6 +147,10 @@ footer {
   color: #fff;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   background: #4cae4c;
+}
+
+.interp .special {
+  color: #d2ff01
 }
 
 .dark {
