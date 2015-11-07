@@ -48,7 +48,11 @@ header h1 {
 }
 header p {
   color: #fff;
+<<<<<<< HEAD
   font-weight: 400 !important
+=======
+  font-weight: 300
+>>>>>>> f5aed16f029457a2f84d478e39adb7b27111819b
 }
 .special {
   color: #4cae4c
