@@ -90,6 +90,14 @@ header p {
   background: none;
   color: #8BC34A
 }
+.navbar-default .navbar-nav > li > a:focus {
+  background: none;
+  color: #8BC34A
+}
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+  color: #8BC34A
+}
 .navbar-default .navbar-brand {
   color: #adadad;
   font-size: 22px;
@@ -195,4 +203,10 @@ footer a {
 
 .rss:hover {
   color:  #ff9900
+}
+.grid-item {
+  width: 200px
+}
+#sponsors .grid-item {
+  padding: 10px
 }
