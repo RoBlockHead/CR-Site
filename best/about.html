@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CircuitRunners</title>
+    <meta name="description" content="CircuitRunners">
+    <meta name="author" content="CircuitRunners">
+    <!--[if IE]>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <![endif]-->
+    <style>
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Oswald', sans !important;
+        }
+    </style>
+</head>
+<body style="height: 100%">
+<!--[if !IE]> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/sandstone/bootstrap.min.css" lazyload>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css" lazyload>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" lazyload>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">circuitrunners</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<header id="header" style="background:linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(78,52,46,0.85)), url('caution.jpg'); background-size: cover; color: #fff; text-shadow: #000 0 0 5px; height: 100%">
+    <div class="container text-center" style="padding-top: 10%; color: #fff">
+        <img class="img-responsive" style="width: 50%; position: relative; margin-right: -50%; left: 50%; transform: translate(-50%, 0)" src="field.png" alt="the field for the mining competition">
+        <h1>The Mine</h1>
+        <p>A hazardous mining location with high concentrations of ore was purchased by BEST this year. This mine required a robot to attain these precious resources.</p>
+        <a href="#robot" class="btn btn-primary">See our solution</a>
+    </div>
+</header>
+<section class="text-center jumbotron" id="robot">
+    <br><br>
+    <div class="container">
+        <img src="robot.png" alt="Goldilocks mining robot" class="img-responsive" style="width: 20%; position: relative; margin-right: -50%; left: 50%; transform: translate(-50%, 0)">
+        <h1>Innovative. Efficient. Simple.</h1>
+        <p class="lead">Goldilocks is a robot designed to safely retrieve various minerals from a hazardous mine.</p><p>It is composed of mechanisms such as a winch and a cam, as well as various subassemblies for transporting materials.</p>
+        <img src="robot2.JPG" alt="Goldilocks mining robot" class="img-responsive" style="width: 35%; position: relative; margin-right: -50%; left: 50%; transform: translate(-50%, 0)">
+        <p>Dimensions were chosen based on the maximum dimensions that could be used for the robot and also based on the sizes of the tunnels, since the robot needs to easily maneuver through the tunnel. The final decision was a robot with a base of 18” x 16”. The dimensions of the notch, or U design, were calculated during the brainstorming and design phase by estimating the height of the robot and then calculating the width of the copper cart at that height. However, after prototyping the U, it was determined that more clearance was ideal to give the driver a greater margin of error, and the width of the notch was increased to 8”. There is also a chamfer on the small U to decrease the precision needed for the driver to obtain the carts.</p>
+        <p>A cam, a mechanical linkage, is a curved rotating piece that is used to convert rotary motion to linear motion. It manipulates the small U to lift the copper cart high enough to clear the tunnels. The cam was incorporated in the design of the robot because it would be a simple, effective way of accomplishing that task. The cam was built using a CNC to cut out an oblong shape out of wood. It is secured with a setscrew that goes on the motor on its flat side, allowing the cam to be secured while being powered by the motor. On the robot, the cam is located in front the small U, secured on a motor mounted by a VEX motor mount. Under the big U, a motor will spin when signaled, causing the cam to rotate. As the cam rotates, the small U is lifted, forcing the copper cart up. To ensure the small U is able to continually support the copper cart, a small block of wood was used to stop the cam from moving past a certain angle. Operating the cam only requires one motor, leaving more motors free for other parts of the robot. The cam is also superior to the winch design due to its greater stability and power.</p>
+        <img src="robot3.JPG" alt="Goldilocks mining robot" class="img-responsive" style="width: 35%; position: relative; margin-right: -50%; left: 50%; transform: translate(-50%, 0)">
+        <p>The lift is made out of an 8.25” slider, a 1.336” x 1.5” x 0.5” block of wood, a 6 inch metal band, and a new winch with string 2’ 6.5” long. The block of wood is attached to one side of the slider, and the other side of the slider is attached to the robot. This cradle-like design goes under the magnetite pipe, tilting it up as the lift rises. For the lift to move up and down, a motor is attached to a winch. One end of the string from the winch, threaded through an eyebolt, is attached to the wooden block, and then the motor and winch are secured on top of the electrical box using a VEX motor mount. Once the lift was tested with a prototype, it was deemed an effective design and built using the given materials.</p>
+        <p>It was decided that the most efficient method to accomplish the goal of retrieving materials would be with a cart. The provided copper cart is used for the chalcopyrite, while the magnetite and coal are gathered into a smaller, lighter, custom-built cart. This subassembly cart, otherwise known as the smaller cart, is used for the magnetite (golf balls). The subassembly cart is optimal since it will fit in the space for the retrieval of magnetite, unlike the copper cart. The subassembly cart is also lighter compared to the copper cart. In addition to being light and efficient, the subassembly cart will slide smoothly over uneven parts of the field since the front and bottom is made out of pieces of polycarbonate to ensure a smoother passage through the tunnels. Polycarbonate is a clear strong plastic, which makes it effective for the purpose of smoothly going over certain parts of the field without falling apart.</p>
+    </div>
+</section>
+<section class="text-center container">
+    <h2>More about the mine</h2>
+    <p>The mining location is divided into 4 shafts for each team. Each shaft is divided into 4 sections: <b>ground floor</b>, <b>sublevel 1</b>, <b>sublevel 2</b>, and <b>sublevel 3</b>.<hr>
+        The <b>ground level</b> contains the starting area, bins, and a spare parts rack.<br><br>
+        <b>Sublevel 1</b> can be accessed by going through tunnel 1, which has loose aggregate on the side of the tunnel. Sublevel 1 contains coal, represented by foam stress balls, and magnetite, represented by golf balls. The coal can be accessed by removing the support beam and letting the coal fall.<br><br>
+        <b>Sublevel 2</b> can be accessed by going through the crooked Tunnel 2. Sublevel 2 contains bauxite, represented by different sizes of aluminum foil balls, and chalcopyrite, represented by different sizes of PVC pipe parts.<br><br>
+        <b>Sublevel 3</b> is located in the middle of the location and all 4 teams share sublevel 3. In the middle of sublevel 3, there is a vein of spodumene, represented by blocks of wood attached using Velcro to a base crystal.<hr>
+        After the qualifying rounds and semifinals, there is a market shift where the prices of each ore is risen or deflated depending on the frequency with which it is mined.</p>
+</section>
+<hr>
+<footer class="container">
+    <p>By the CircuitRunners at Joseph Wheeler High School</p>
+    <p>Contact Michael Fusia at <a href=mailto:michael.fusia@cobbk12.org">michael.fusia@cobbk12.org</a></p>
+    <p><a href="credits.html">Image credit</a></p>
+</footer>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US" style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CircuitRunners</title>
+    <meta name="description" content="CircuitRunners">
+    <meta name="author" content="CircuitRunners">
+    <!--[if IE]>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <![endif]-->
+    <style>
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Oswald', sans !important;
+        }
+    </style>
+</head>
+<body style="height: 100%">
+<!--[if !IE]> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/sandstone/bootstrap.min.css" lazyload>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css" lazyload>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" lazyload>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">circuitrunners</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<header id="header" style="background: url('cave.jpg'); background-size: cover; color: #fff; text-shadow: #000 0 0 5px; height: 100%">
+    <div class="container text-center" style="padding-top: 20%">
+        <h1 class="text-uppercase">Meet Goldilocks. Mining done <em>just right</em>.</h1>
+        <p class="lead">Goldilocks, the robot of the future of mining, is a product of the CircuitRunners, the robotics mining company.</p>
+        <a href="#explore" class="btn btn-danger"><span class="glyphicon glyphicon-menu-down"></span> explore <span class="glyphicon glyphicon-menu-down"></span></a>
+    </div>
+</header>
+<section id="explore" style="background: url('cave_flip.png'); background-size: cover; color: #fff; height: 100%">
+    <div class="container text-center" style="padding-top: 20%">
+        <p class="lead">Goldilocks is a robot designed to safely retrieve various minerals from a hazardous mine.</p>
+        <a href="about.html" class="btn btn-primary">Enter the mine</a>
+    </div>
+</section>
+<hr>
+<footer class="container">
+    <p>By the CircuitRunners at Joseph Wheeler High School</p>
+    <p>Contact Michael Fusia at <a href=mailto:michael.fusia@cobbk12.org">michael.fusia@cobbk12.org</a></p>
+    <p><a href="credits.html">Image credit</a></p>
+</footer>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var posFromTop = $(window).scrollTop();
+            $('#header').css('background', 'linear-gradient(to bottom,rgba(0,0,0,'+ posFromTop/screen.height +'),rgba(0,0,0,'+ posFromTop/screen.height +')),url("cave.jpg")');
+            $('#header').css('background-size', 'cover');
+        });
+    });
+</script>
+</body>
+</html>
