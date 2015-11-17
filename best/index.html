@@ -65,13 +65,13 @@
     <p>Contact Michael Fusia at <a href=mailto:michael.fusia@cobbk12.org">michael.fusia@cobbk12.org</a></p>
     <p><a href="credits.html">Image credit</a></p>
 </footer>
-<script src="https://cdn.jsdelivr.net/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.smooth-scroll/1.5.6/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
 <script>
+    $('a').smoothScroll();
     $(document).ready(function(){
-        $('a').smoothScroll();
         $(window).scroll(function(){
             var posFromTop = $(window).scrollTop();
             $('#header').css('background', 'linear-gradient(to bottom,rgba(0,0,0,'+ posFromTop/screen.height +'),rgba(0,0,0,'+ posFromTop/screen.height +')),url("cave.jpg")');
