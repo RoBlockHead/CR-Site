@@ -70,8 +70,8 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.smooth-scroll/1.5.6/jquery.smooth-scroll.min.js"></script>
 <script>
-    $('a').smoothScroll();
     $(document).ready(function(){
+        $('a').smoothScroll();
         $(window).scroll(function(){
             var posFromTop = $(window).scrollTop();
             $('#header').css('background', 'linear-gradient(to bottom,rgba(0,0,0,'+ posFromTop/screen.height +'),rgba(0,0,0,'+ posFromTop/screen.height +')),url("cave.jpg")');
