@@ -184,6 +184,10 @@ footer {
   background: linear-gradient(to bottom, rgba(76,174,76,0.85) 0px, rgba(76,174,76,0.85) 100%);
 }
 
+.interp.nano {
+  background: linear-gradient(to bottom, rgba(76,174,76,0.85) 0px, rgba(139,195,74,0.85) 100%);
+}
+
 footer a {
   color: #333;
   transition:.5s
