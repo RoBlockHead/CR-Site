@@ -53,13 +53,40 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<header class="jumbotron filled interp">
-    <div class="container">
-        <h1 class="text-left">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
-        <p class="lead text-left">We're the CircuitRunners and we don't just build robots.</p>
+<section>
+    <div class="go-down jumbotron interp nano" style="height: 100vh">
+        <div class="container">
+            <h1 class="text-left" style="font-size: 15rem">WE MOVE OUR COMMUNITY FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
+        </div>
     </div>
-</header>
-
+</section>
+<section class="text-center container">
+    <div class="grid">
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/test.png" alt="cyber center"><h3>Cyber Center</h3><p>Provides Cyber Center (computer and printer access) at FRC competitions</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/boxerstock.png" alt="boxerstock"><h3>Boxerstock Music Festival</h3><p>We attended a music festival raising money for a Boxer Rescue, where we showcased robots and were featured on the stage to shoot t-shirts to the attendees from our robotic t-shirt cannon</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/scrimmage.png" alt="fll scrimmage"><h3>FLL Scrimmage</h3><p>An annual event that allows teams to practice robot rounds and presentations before their competition, with practice judges who judge at actual qualifying events</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/qualifier.png" alt="ftc qualifier"><h3>FTC Qualifier</h3><p>An annual event where we host an official FTC qualifier</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/spectrum.png" alt="spectrum"><h3>Science Spectrum</h3><p>Science summer camp for middle school students hosted by Wheeler's magnet program</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/leaders.png" alt="leaders"><h3>Government Leaders Outreach</h3><p>Visit from Congressman Tom Price and Cobb Country Superintendent Chris Ragsdale after a lobby trip to Washington D.C.</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/daze.png" alt="wildcat daze"><h3>Wildcat Daze</h3><p>Display of robots and information to potential CircuitRunners and parents</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/qualifierfll.png" alt="fll qualifier"><h3>FLL Qualifier</h3><p>An annual event where we host an official FLL qualifier. This is one of our largest events</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/eastside.png" alt="east side"><h3>East Side Baptist</h3><p>Visit to East Side Baptist Church to promote robotics to students (K-6)-</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/workshop.png" alt="wildcat daze"><h3>FLL Workshop Day</h3><p>An annual event dedicated to assisting FLL teams, especially rookie teams, on their journey with FLL. Workshops include Judging Overview, Strategy, Project, Core Values, and Programming</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/holy.png" alt="holy family fall festival"><h3>Holy Family Fall Festival</h3><p>Annual showcase at Holy Family Catholic Church's Fall Festival</p></div>
+        <div class="grid-item well"><img class="img-responsive" src="images/outreach/ge.png" alt="ge visit"><h3>GE Visit</h3><p>Showcase and information at GE's Marietta location</p></div>
+        <div class="grid-item well"><h3>PDK Airshow</h3><p>Showcase of robots at PDK Good Neighbor Airshow along with Fernbank LINKS</p></div>
+        <div class="grid-item well"><h3>Simpson Coding Club</h3><p>Assistance at Simpson Middle School's programming club</p></div>
+    </div>
+</section>
+<hr>
+<section class="jumbotron">
+    <div class="container">
+        <blockquote>
+            <p>"Thank you so much for your hospitality yesterday and the wonderful tour of your robotics workroom. You are doing amazing work and your help is invaluable!"</p>
+            <footer>Coach Nourollahi <cite>Pope High School</cite></footer>
+        </blockquote>
+    </div>
+</section>
 
 <footer>
     <div class="container">
@@ -81,7 +108,15 @@
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/masonry/3.3.2/masonry.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+<script>
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+    });
+</script>
 <script data-no-instant>InstantClick.init();</script>
 </body>
 </html>
