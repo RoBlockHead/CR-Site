@@ -7,6 +7,21 @@ body {
 .go-down {
   padding-top: 84px !important
 }
+.card-group .card-image {
+  width: 100%
+}
+.card-group .card {
+  height: 22rem
+}
+.card a {
+  color: #fff
+}
+.card .card-text {
+  color: #eee;
+}
+.card-inverse .text-muted {
+  color: #ccc;
+}
 #header {
   background: url('../images/banner.jpg');
   background-size: cover;
