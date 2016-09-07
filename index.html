@@ -1,126 +1,99 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>CircuitRunners</title>
     <meta name="description" content="CircuitRunners">
     <meta name="author" content="CircuitRunners">
-      <!--[if IE]>
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic">
-      <![endif]-->
   </head>
   <body>
-      <!--[if !IE]> -->
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" lazyload>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css" lazyload>
-        <link rel="stylesheet" href="css/style.css" lazyload>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" lazyload>
-      <!-- <![endif]-->
-      <script src="https://cdn.jsdelivr.net/vvo-lazyload/2.0.5/lazyload.min.js"></script>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <div class="col-md-4 col-xs-4">
-                <img src="images/logo-modern.png" alt="logo">
-              </div>
-              <div class="col-md-8 col-xs-4">
-                <b>circuit</b>runners
-              </div>
-            </a>
+    <nav class="navbar navbar-fixed-top navbar-inverse bg-faded">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="col-xs-4">
+            <img src="images/logo-modern.png" alt="logo">
           </div>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#teamsb"><i class="fa fa-group"></i> Teams</a></li>
-              <li><a href="outreach.html"><i class="fa fa-heart-o"></i> Outreach</a></li>
-              <li><a href="news.html"><i class="fa fa-newspaper-o"></i> News</a></li>
-              <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+          <div class="col-md-8 col-xs-4">
+            <b>circuit</b>runners
+          </div>
+        </a>
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item"><a href="#teamsb" class="nav-link"><span class="fa fa-group"></span> Teams</a></li>
+          <li class="nav-item"><a href="outreach.html" class="nav-link"><span class="fa fa-heart-o"></span> Outreach</a></li>
+          <li class="nav-item"><a href="news.html" class="nav-link"><span class="fa fa-newspaper-o"></span> News</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link"><span class="fa fa-info-circle"></span> About</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <header id="header" class="jumbotron filled shade">
-        <div class="container">
-          <div class="header">
-            <h1 class="text-left">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
-            <p class="lead text-left">We're the CircuitRunners and we don't just build robots.</p>
-          </div>
+    <header id="header" class="jumbotron jumbotron-fluid filled shade">
+      <div class="container">
+        <div class="header">
+          <h1 class="text-xs-left display-3">MOVE FROM POTENTIAL TO <span class="special">KINETIC</span>.</h1>
+          <p class="lead text-xs-left">We're the CircuitRunners and we don't just build robots.</p>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section id="teamsb">
-        <div class="container">
-          <h1 id="teams" class="text-center">Teams</h1>
-          <div class="space"></div>
-          <div class="row">
-            <a href="frc.html">
-            <div class="col-md-6 panel" id="frc">
-              <div class="media testimonial">
-                <div class="media-left">
-                  <img data-src="images/FRC.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="FRC">
-                </div>
-                <div class="media-body">
-                  <h3 class="media-heading">FRC</h3>
-                    <p>The FIRST Robotics Competition gives students 6 weeks to build a robot only limited by their imaginations &mdash; and the weight/size requirements.</p>
-                </div>
-              </div>
+    <section id="teamsb" class="container">
+        <h1 id="teams" class="text-xs-center">Teams</h1>
+        <div class="space"></div>
+        <div class="card group">
+          <div class="card card-inverse" style="background: rgb(51,51,51,0.8)">
+            <img class="card-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/FRC_Logo.svg/640px-FRC_Logo.svg.png" alt="FRC logo">
+            <div class="card-img-overlay">
+              <h4 class="card-title">FRC</h4>
+              <h6 class="card-subtitle text-muted">FIRST Robotics Competition</h6>
+              <p class="card-text">FRC gives students 6 weeks to build a robot only limited by their imaginations &mdash; and the weight/size requirements.</p>
+              <a href="frc.html" class="btn btn-primary">Learn more</a>
             </div>
-            </a>
-            <a href="grits.html">
-            <div class="col-md-6 panel" id="grits">
-              <div class="media testimonial">
-                <div class="media-left">
-                  <img data-src="images/GRITS.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="GRITS">
-                </div>
-                <div class="media-body">
-                  <h3 class="media-heading">GRITS</h3>
-                    <p>GRITS is a Georgia off-season FRC competition that uses the previous year's FRC challenge.</p>
-                </div>
-              </div>
-            </div>
-            </a>
-            <a href="ftc.html">
-            <div class="col-md-6 panel" id="ftc">
-              <div class="media testimonial">
-                <div class="media-left">
-                  <img data-src="images/FTC.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="FTC">
-                </div>
-                <div class="media-body">
-                  <h3 class="media-heading">FTC</h3>
-                    <p>The First Tech Challenge is a yearlong alliance competition with tight size requirements and predetermined materials.</p>
-                </div>
-              </div>
-            </div>
-            </a>
-            <a href="best.html">
-            <div class="col-md-6 panel" id="best">
-              <div class="media testimonial">
-                <div class="media-left">
-                  <img data-src="images/BEST.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="BEST">
-                </div>
-                <div class="media-body">
-                  <h3 class="media-heading">BEST</h3>
-                    <p>BEST Robotics makes students get creative with unconventional materials and interesting rules.</p>
-                </div>
-              </div>
-            </div>
-            </a>
           </div>
+          <!--
+          <a href="grits.html">
+          <div class="col-md-6 panel" id="grits">
+            <div class="media testimonial">
+              <div class="media-left">
+                <img data-src="images/GRITS.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="GRITS">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">GRITS</h3>
+                  <p>GRITS is a Georgia off-season FRC competition that uses the previous year's FRC challenge.</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a href="ftc.html">
+          <div class="col-md-6 panel" id="ftc">
+            <div class="media testimonial">
+              <div class="media-left">
+                <img data-src="images/FTC.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="FTC">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">FTC</h3>
+                  <p>The First Tech Challenge is a yearlong alliance competition with tight size requirements and predetermined materials.</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a href="best.html">
+          <div class="col-md-6 panel" id="best">
+            <div class="media testimonial">
+              <div class="media-left">
+                <img data-src="images/BEST.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="BEST">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">BEST</h3>
+                  <p>BEST Robotics makes students get creative with unconventional materials and interesting rules.</p>
+              </div>
+            </div>
+          </div>
+          </a>-->
         </div>
-      </section>
+    </section>
 
       <section class="dark">
         <div class="container text-center">
@@ -147,8 +120,9 @@
     </div>
   </footer>
 
-      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
-      <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/jquery.smooth-scroll/1.5.6/jquery.smooth-scroll.min.js"></script>
       <script>
           $('a').smoothScroll({offset: -84});
