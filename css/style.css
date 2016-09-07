@@ -73,12 +73,20 @@ header p {
   .navbar-right {
     background: rgba(0, 0, 0, 0.6)
   }
-  #navbar {
+  .navbar .pull-xs-right {
+    background: rgba(0, 0, 0, 0.6)
+  }
+  .navbar {
     margin-top: 6px;
     border: none
   }
 }
 .navbar .navbar-right {
+  padding-top: 6px;
+  padding-right: 48px;
+  font-size: 1.6rem
+}
+.navbar .pull-xs-right {
   padding-top: 6px;
   padding-right: 48px;
   font-size: 1.6rem
@@ -89,6 +97,15 @@ header p {
   transition:.5s
 }
 .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #8BC34A
+}
+.navbar .navbar-nav > .active > a {
+  background: none;
+  color: #4cae4c;
+  transition:.5s
+}
+.navbar .navbar-nav > .active > a:hover {
   background: none;
   color: #8BC34A
 }
@@ -117,6 +134,31 @@ header p {
 .navbar-default .navbar-brand:hover {
   color: #ccc
 }
+.navbar .navbar-nav > li > a {
+  background: none;
+  color: #fff;
+  transition:.5s
+}
+.navbar .navbar-nav > li > a:hover {
+  background: none;
+  color: #8BC34A
+}
+.navbar .navbar-nav > li > a:focus {
+  background: none;
+  color: #8BC34A
+}
+.navbar .navbar-nav > .active > a:focus {
+  background: none;
+  color: #8BC34A
+}
+.navbar .navbar-brand {
+  color: #adadad;
+  font-size: 22px;
+  transition:.5s
+}
+.navbar .navbar-brand:hover {
+  color: #ccc
+}
 .navbar-brand b {
   color: #4cae4c
 }
@@ -130,7 +172,7 @@ header p {
   padding-top: 6px;
   padding-left: 0
 }
-.navbar-brand .col-md-4 {
+.navbar-brand .col-xs-4 {
   padding-right: 0
 }
 #teamsb {
