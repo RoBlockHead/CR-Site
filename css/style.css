@@ -7,7 +7,7 @@ body {
 .go-down {
   padding-top: 84px !important
 }
-.card-group .card-image {
+.card-group .card-img {
   width: 100%
 }
 .card-group .card {
@@ -19,8 +19,8 @@ body {
 .card .card-text {
   color: #eee;
 }
-.card-inverse .text-muted {
-  color: #ccc;
+.card-inverse > .card-img-overlay > .text-muted {
+  color: #ccc !important
 }
 #header {
   background: url('../images/banner.jpg');
@@ -28,10 +28,6 @@ body {
 }
 header {
   padding-top: 20% !important
-}
-#teamsb a {
-    color: #000;
-    text-decoration: none
 }
 .shade {
   text-shadow: 0 0 10px #000
