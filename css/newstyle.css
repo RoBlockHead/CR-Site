@@ -10,7 +10,7 @@ body {
 .navbar-brand b {
   color: #4caf50
 }
-.navbar-brand b:hover {
+.navbar-brand:hover b {
   color: #66bb6a
 }
 .nav-link {
