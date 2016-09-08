@@ -35,7 +35,7 @@ body {
 .active .nav-link:focus {
   color: #8bc34a
 }
-.navbar .bg-faded {
+.bg-faded {
   background: rgba(0, 0, 0, 0.6)
 }
 /* --CARDS-- */
