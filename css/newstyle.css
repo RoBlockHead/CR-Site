@@ -1,6 +1,5 @@
 /* --GLOBAL-- */
 body {
-  padding-top: 54px;
   font-family: 'Roboto', sans-serif
 }
 /* --NAVBAR-- */
@@ -63,8 +62,11 @@ header .display-3 {
   color: #fff;
   font-weight: 700
 }
-header p {
+header .h1 {
   color: #fff;
+}
+header .container {
+  padding-top: 54px;
 }
 /* --UTILITIES-- */
 .shade {
