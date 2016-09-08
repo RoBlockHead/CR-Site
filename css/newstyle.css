@@ -1,3 +1,21 @@
 body {
   padding-top: 54px
 }
+.navbar-brand {
+  color: #2e7d32
+}
+.navbar-brand a {
+  color: #1b5e20
+}
+.nav-link {
+  color: #1b5e20
+}
+.nav-link:hover {
+  color: #4caf50
+}
+.active .nav-link {
+  color: #2e7d32
+}
+.bg-faded {
+  background: rgba(0, 0, 0, 0.7);
+}
