@@ -1,9 +1,7 @@
 /* --GLOBAL-- */
 body {
-  font-family: 'Roboto', sans-serif
-}
-body::after {
   padding-top: 54px;
+  font-family: 'Roboto', sans-serif
 }
 /* --NAVBAR-- */
 .navbar-brand {
@@ -61,9 +59,12 @@ body::after {
   background: url('../images/banner.jpg');
   background-size: cover
 }
-header h1 {
+header .display-3 {
   color: #fff;
   font-weight: 700
+}
+header p {
+  color: #fff;
 }
 /* --UTILITIES-- */
 .shade {
