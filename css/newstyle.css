@@ -4,8 +4,14 @@ body {
 .navbar-brand {
   color: #66bb6a
 }
+.navbar-brand:hover {
+  color: #81c784
+}
 .navbar-brand b {
   color: #4caf50
+}
+.navbar-brand b:hover {
+  color: #66bb6a
 }
 .nav-link {
   color: #66bb6a
@@ -17,5 +23,5 @@ body {
   color: #66bb6a
 }
 .bg-faded {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7)
 }
