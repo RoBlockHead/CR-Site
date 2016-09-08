@@ -1,27 +1,61 @@
+/* --GLOBAL-- */
 body {
   padding-top: 54px
+  font-family: 'Roboto', sans-serif;
 }
+/* --NAVBAR-- */
 .navbar-brand {
-  color: #66bb6a
+  color: #adadad
 }
 .navbar-brand:hover {
-  color: #81c784
+  color: #ccc
 }
 .navbar-brand b {
-  color: #4caf50
+  color: #4cae4c
 }
 .navbar-brand:hover b {
-  color: #66bb6a
+  color: #8bc34a
 }
 .nav-link {
-  color: #66bb6a
+  color: #fff;
+  transition: .5s
 }
 .nav-link:hover {
-  color: #4caf50
+  color: #8bc34a
+}
+.nav-link:focus {
+  color: #8bc34a
 }
 .active .nav-link {
-  color: #66bb6a
+  color: #4cae4c
 }
-.bg-faded {
-  background: rgba(0, 0, 0, 0.7)
+.active .nav-link:hover {
+  color: #8bc34a
+}
+.active .nav-link:focus {
+  color: #8bc34a
+}
+.navbar .bg-faded {
+  background: rgba(0, 0, 0, 0.6)
+}
+/* --CARDS-- */
+.card-img {
+  width: 100%
+}
+.card-group .card {
+  height: 22rem
+}
+.card a {
+  color: #fff
+}
+.card .card-text {
+  color: #eee;
+}
+.card-inverse > .card-img-overlay > .text-muted {
+  color: #ccc !important
+}
+/* --HEADER-- */
+#header {
+  background: url('../images/banner.jpg');
+  background-size: cover
 }
