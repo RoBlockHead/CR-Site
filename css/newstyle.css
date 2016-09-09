@@ -41,9 +41,6 @@ body {
 .card-img {
   width: 100%
 }
-.card-group .card {
-  height: 22rem
-}
 .card a {
   color: #fff
 }
@@ -82,4 +79,15 @@ header .container {
 }
 .special {
   color: #4cae4c
+}
+/* --TEAMS-- */
+@media (min-width: 544px) {
+  .card-group .card {
+    height: 500px
+  }
+}
+@media (min-width: 992px) {
+  .card-group .card {
+    height: 22em
+  }
 }
