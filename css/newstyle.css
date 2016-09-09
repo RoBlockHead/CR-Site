@@ -80,6 +80,10 @@ header .container {
 .special {
   color: #4cae4c
 }
+.dark {
+  color: #f2f2f2;
+  background: #000
+}
 /* --TEAMS-- */
 @media (min-width: 544px) {
   .card-group .card {
