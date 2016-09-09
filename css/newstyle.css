@@ -63,8 +63,15 @@ header h1 {
   color: #fff;
   font-weight: 700
 }
-header p {
+header .display-3 {
   color: #fff;
+  font-weight: 700
+}
+header .lead {
+  color: #fff
+}
+header .h1 {
+  color: #fff
 }
 header .container {
   padding-top: 54px;
