@@ -59,7 +59,7 @@ body {
   background-position: center;
   background-size: cover
 }
-header .display-3 {
+header h1 {
   color: #fff;
   font-weight: 700
 }
