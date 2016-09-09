@@ -86,6 +86,11 @@ header .container {
   background: #000
 }
 /* --TEAMS-- */
+@media (max-width: 543px) {
+  .card-group .card {
+    height: 250px
+  }
+}
 @media (min-width: 544px) {
   .card-group .card {
     height: 500px
