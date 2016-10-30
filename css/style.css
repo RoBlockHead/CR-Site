@@ -1,11 +1,11 @@
 .filled,body,html {
-  height: 100%
+  min-height: 100%
 }
 body {
     font-family: 'Roboto', sans-serif;
 }
 .go-down {
-  padding-top: 84px !important
+  padding-top: 128px !important
 }
 .card-img {
   width: 100%
