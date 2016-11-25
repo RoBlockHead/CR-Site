@@ -1,16 +1,18 @@
-.cover-heading {
-  animation-duration: 1.5s;
-  animation-name: main-header-in;
-}
+@media (min-width: 40em) {
+  .cover-heading {
+    animation-duration: 1.5s;
+    animation-name: main-header-in;
+  }
 
-.cover-heading .special {
-  animation-duration: 1.5s;
-  animation-name: main-header-in-span
-}
+  .cover-heading .special {
+    animation-duration: 1.5s;
+    animation-name: main-header-in-span
+  }
 
-.cover .lead {
-  animation-duration: 1.5s;
-  animation-name: main-header-in
+  .cover .lead {
+    animation-duration: 1.5s;
+    animation-name: main-header-in
+  }
 }
 
 #teams .card:first-child {
