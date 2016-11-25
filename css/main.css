@@ -31,8 +31,18 @@ body {
   color: #d2ff01
 }
 
-.bg-inverse-special {
-  background-color: rgba(55, 58, 60, 0.5) !important
+@media (min-width: 40em) {
+  .bg-inverse-special {
+    background-color: rgba(55, 58, 60, 0.5) !important
+  }
+  
+  .navbar { 
+    transition: padding 0.3s, background-color 0.3s;
+  }
+  
+  .navbar.bigger {
+    padding: 16px 20px;
+  }
 }
 
 .clean-link {
