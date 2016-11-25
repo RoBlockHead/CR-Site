@@ -19,7 +19,7 @@
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-  padding: 64px;
+  padding: 64px 0;
 }
 
 .cover-container {
@@ -29,7 +29,7 @@
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /*
@@ -48,6 +48,7 @@
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
+    padding: 64px;
   }
   /* Handle the widths */
   .cover-container {
