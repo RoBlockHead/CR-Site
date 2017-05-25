@@ -5,31 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>CircuitRunners</title>
+    <meta name="description" content="We're a robotics club at Wheeler High School in Marietta, Georgia, but we do so much more than just build robots.">
+    <meta name="keywords" content="robotics, high school, marietta, wheeler, club, organization, FIRST, GRITS, FRC, FTC, BEST, GAFIRST">
+    <meta name="author" content="CircuitRunners">
+    <!-- will be added when logo is received <link rel="shortcut icon" href="favicon.ico" /> -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha256-mIfhv/h3MLq3WSiSlduuZO3saRNzzuf1LK8w3z3l3JY=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" integrity="sha256-LB8XW7EkyeYr9VwAm82rQ9EaZsiUpOjtIfejQmNVqz0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cover.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <nav class="navbar fixed-top navbar-inverse bg-inverse" id="navbar">
       <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <a class="navbar-brand" href="index.html">
-            <img src="img/logo-modern.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            <span class="special"><b style="font-weight: 500">Circuit</b></span><span style="font-weight: 300">Runners</span>
+          <img src="img/logo-modern.png" style="width: 30px; height: 30px" class="d-inline-block align-top" alt="">
+          <span class="special"><b style="font-weight: 500">Circuit</b></span><span style="font-weight: 300">Runners</span>
         </a>
-        <ul class="nav navbar-nav float-xs-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link navbar-toggler" href="http://example.com" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="supportedContentDropdown">
-              <a class="dropdown-item" href="news.html"><span class="fa fa-newspaper-o fa-fw"></span> News</a>
-              <a class="dropdown-item" href="outreach.html"><span class="fa fa-heart-o fa-fw"></span> Outreach</a>
-              <a class="dropdown-item" href="about.html"><span class="fa fa-info fa-fw"></span> About</a>
-            </div>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="news.html"><span class="fa fa-newspaper-o fa-fw"></span> News</a>
+            <a class="nav-item nav-link" href="outreach.html"><span class="fa fa-heart-o fa-fw"></span> Outreach</a>
+            <a class="nav-item nav-link" href="about.html"><span class="fa fa-info fa-fw"></span> About</a>
+          </div>
+        </div>
       </div>
     </nav>
     
@@ -45,7 +51,7 @@
       <div class="container">
         <h1 class="display-3">Our Mission</h1>
         <p>Our mission is to inspire young people to be science and technology leaders, by engaging them in exciting mentor-based programs that build science, engineering and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.</p>
-          <p>Our vision is shared with Dean Kamen, founder of FIRST Robotics:
+          <p>Our vision is shared with Dean Kamen, founder of FIRST Robotics: <br>
               <blockquote class="blockquote">
               “transform our culture by creating a world where science and technology are celebrated and where young people dream of becoming science and technology heroes.”
               </blockquote>
@@ -91,7 +97,7 @@
           <p>CircuitRunners supports an outreach section, completely devoted to educating and sparking interest in robotics and engineering.</p>
         </div>
       </div>
-      <div class="text-xs-center">
+      <div class="text-center">
         <a href="outreach.html" class="btn btn-primary btn-lg">See our impact</a>
       </div>
       <br>
@@ -108,15 +114,17 @@
             <a href="https://circuitrunnersblog.wordpress.com/feed/" class="rss"><span class="fa fa-rss-square fa-fw fa-3x"></span></a>
           </div>
           <div class="col-md-6">
-            <p class="lead text-xs-right">&copy; 2016 CircuitRunners</p>
+            <p class="lead text-right hidden-sm-down">&copy; 2017 CircuitRunners</p>
+            <div class="hidden-md-up">
+              <br>
+              <p class="lead">&copy; 2017 CircuitRunners</p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha256-j+XrvkQ4jJ99Hj0pJKPr6k0RCgxDDSTs3PBqLrX2EMc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
   </body>
 </html>
