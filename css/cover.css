@@ -23,6 +23,11 @@
 }
 
 .cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
   margin-right: 10px;
   margin-left: 10px;
 }
