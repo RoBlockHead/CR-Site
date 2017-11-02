@@ -55,14 +55,14 @@ body {
 }
 
 .cb-has-footer {
-  margin-bottom: 116px;
+  margin-bottom: 126px;
 }
 
 .card-footer-clear {
   position: absolute; 
   bottom: 0; 
   width: 100%;
-  padding: 1em
+  padding: 25px 50px 75px 100px
 }
 
 .btn-outline-primary {
