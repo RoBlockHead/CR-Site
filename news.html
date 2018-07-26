@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags always come first -->
+<html lang="en-US">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-    <title>CircuitRunners</title>
-    <meta name="description" content="We're a robotics club at Wheeler High School in Marietta, Georgia, but we do so much more than just build robots.">
-    <meta name="keywords" content="robotics, high school, marietta, wheeler, club, organization, FIRST, GRITS, FRC, FTC, BEST, GAFIRST">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Combined Coding Competition</title>
+    <meta name="description" content="CircuitRunners">
     <meta name="author" content="CircuitRunners">
-    <!-- will be added when logo is received <link rel="shortcut icon" href="favicon.ico" /> -->
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/cover.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">  </head>
-  <body>
-   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script> 
-   
-    <nav class="navbar fixed-top navbar-inverse bg-inverse bg-inverse-special bigger" id="navbar">
-      <div class="">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo-modern.png" style="width: 30px; height: 30px" class="d-inline-block align-top" alt="">
-            <span class="special"><b style="font-weight: 500">Circuit</b></span><span style="font-weight: 300">Runners</span>
-        </a>
-        <div style="display: inline;">
-            <a class="nav-item" href="outreach.html" style="color: white; padding-left: 20px; padding-right:20px;"><span class="far fa-heart"></span> Outreach</a>
-            <a class="nav-item" href="news.html" style="color: white; padding-left: 2vw; padding-right:20px;"><span class="far fa-newspaper"></span> News</a>
-            <a class="nav-item" href="about.html" style="color: white; padding-left: 20px; padding-right:20px;"><span class="fa fa-info-circle"></span> About</a>
-            <a class="nav-item" href="C3_1.html" style="color: white; padding-left: 20px; padding-right:20px;"><i class="fa fa-trophy"></i> C3</a>
-          </div>
-      </div>
-    </nav>
+    <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
+    <!--[if IE]>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="css/c3.css">
+    <![endif]-->
+</head>
+<body>
+<!--[if !IE]> -->
+<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" lazyload>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" lazyload>
+<link rel="stylesheet" href="css/style.css" lazyload>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" lazyload>
+<link rel="stylesheet" href="css/c3.css" lazyload>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="col-md-4 col-xs-4">
+                    <img src="images/logo-modern.png" alt="logo">
+                </div>
+                <div class="col-md-8 col-xs-4">
+                    <b>Circuit</b>Runners
+                </div>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html#teamsb"><i class="fas fa-users"></i> Teams</a></li>
+                <li><a href="outreach.html"><i class="far fa-heart"></i> Outreach</a></li>
+                <li><a href="news.html"> <i class="far fa-newspaper"></i> News</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="C3_1.html"><i class="fa fa-trophy"></i> C3</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
     
     <section class="go-down container">
       <h1>News</h1>
@@ -50,26 +61,24 @@
        </div>
     </section>
     
-    <footer class="jumbotron">
-      <div class="container">
+    <footer>
+    <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p class="h3">Connect with us</p>
-            <a href="https://www.facebook.com/circuitrunners" class="fbl" target="_blank"><i class="fab fa-facebook-square fa-fw fa-3x"></i></a>
+            <div class="col-md-6 col-xs-6">
+                <h3>Get the latest</h3>
+                <a href="https://www.facebook.com/circuitrunners" class="fbl" target="_blank"><i class="fab fa-facebook-square fa-fw fa-3x"></i></a>
                 <a href="https://twitter.com/circuitrunners" class="twl" target="_blank"><i class="fab fa-twitter-square fa-fw fa-3x"></i></a>
                 <a href="https://plus.google.com/105905430956699633201/posts" class="gpl" target="_blank"><i class="fab fa-google-plus-square fa-fw fa-3x"></i></a>
                 <a href="https://www.instagram.com/circuitrunners1002/" class="insta"  target="_blank"><i class="fab fa-instagram fa-fw fa-3x"></i></a>
-          </div>
-          <div class="col-md-6">
-            <p class="lead text-right hidden-sm-down">&copy; 2017 CircuitRunners</p>
-            <div class="hidden-md-up">
-              <br>
-              <p class="lead">&copy; 2018 CircuitRunners</p>
             </div>
-          </div>
+            <div class="col-md-6 col-xs-6">
+                <h3 class="text-center lead">© 2018 CircuitRunners</h3>
+            </div>
         </div>
-      </div>
-    </footer>
+        <br><br>
+    </div>
+</footer>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
