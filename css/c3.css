@@ -330,3 +330,30 @@ select {
 .logo {
     height: 300px;
 }
+
+@media screen and (max-width: 1200px) {
+    input {
+        min-width: 33em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .resource_buttons {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    input {
+        min-width: 25em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sponsor_logos {
+        display: block;
+    }
+    input {
+        min-width: 100%;
+    }
+}
