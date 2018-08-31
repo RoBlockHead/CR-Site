@@ -338,9 +338,13 @@ select {
 }
 
 @media screen and (max-width: 1000px) {
-    .resource_buttons {
-        display: block;
-    }
+    	.resource_buttons {
+        	display: block;
+    	}
+    	#sponsorlogos {
+		width: 250;
+		height: 157;
+	}
 }
 
 @media screen and (max-width: 991px) {
