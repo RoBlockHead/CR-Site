@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Futura-Book;
+    src: url(../fonts/Futura-Book.otf);
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url(../../fonts/Futura-Bold.otf);
+}
+
+@font-face {
+    font-family: Futura-Bold-Outline;
+    src: url(../fonts/FuturaBQ-BoldOutline.otf);
+}
