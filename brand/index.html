@@ -27,6 +27,7 @@
 <body>
     <iframe src="CircuitRunner_Brand_Standards_spread.pdf#zoom=60" id="pdfViewer" alt="CircuitRunners Brand Standards PDF"></iframe>
     <script>
+        // check useragent to determine if pdfViewer will display correctly
         var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
         var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
         var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
@@ -38,6 +39,8 @@
         if ((is_chrome) && (is_opera)) {
             is_chrome = false;
         }
+
+        // redirect to pdf if useragent is safari
         if (is_safari) {
             redirect();
         }
