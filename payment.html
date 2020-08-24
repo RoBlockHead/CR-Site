@@ -77,26 +77,6 @@
         <p class="desc">Sit deserunt et occaecat pariatur elit veniam proident labore magna mollit qui. Lorem tempor incididunt ut aliquip ad ipsum sint eiusmod irure non eu adipisicing adipisicing. Officia nulla adipisicing non ex id tempor ut officia laborum non officia
             magna tempor. Minim ea anim ea dolore minim Lorem ea ullamco. Voluptate reprehenderit deserunt deserunt voluptate reprehenderit.</p>
         <div class="payment-container">
-            <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="return validateForm()" name="payment-form">
-                <input type="hidden" name="cmd" value="_xclick">
-                <input type="hidden" name="business" value="pp.merch01-facilitator@example.com">
-                <input type="hidden" name="item_name" value="CircuitRunners Dues">
-                <input type="hidden" name="amount" value="300" />
-                <input type="hidden" name="tax" value="0">
-                <input type="hidden" name="quantity" value="1">
-                <input type="hidden" name="currency_code" value="USD">
-                <label for="custom">Full Name</label>
-                <input type="text" name="custom" id="name-input" /><br>
-
-                <input type="hidden" name="paymentaction" value="sale">
-                <input type="hidden" name="image_url" value="https://circuitrunners.github.io/images/logo-modern.png">
-
-                <input type="hidden" name="no_shipping" value=1>
-
-                <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
-            </form> -->
-            <label id="nameErrorMessage" hidden>Test</label>
-            <span id="nameLine"><label>Name </label><input type="text" id="nameField"></span>
             <div id="paypal-button-container"></div>
         </div>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="return validateForm()" name="payment-form">
@@ -112,25 +92,11 @@
             <input type="submit" name="submit" id="donateButton" alt="PayPal - The safer, easier way to pay online" value="Donate to CircuitRunners">
         </form>
     </div>
-    <div class="content" id="after-payment" hidden>
-        <h1 class="title">Payment Complete!</h1>
-        <p class="desc">Your payment is completed!</p>
-    </div>
     <script src="https://www.paypal.com/sdk/js?client-id=ARM7wuyXZDsYeOSHhBu4AJfYdxnOmTOtrjHdMt9vSStnVX_i0orymRMZ0b0wuIQCVV3CDP88U-GHqoxI&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script>
-        nameField = document.getElementById("nameField");
-        nameErrMessage = document.getElementById("nameErrorMessage");
+        // ARM7wuyXZDsYeOSHhBu4AJfYdxnOmTOtrjHdMt9vSStnVX_i0orymRMZ0b0wuIQCVV3CDP88U-GHqoxI LIVE
+        // AdoN--g-vTh8H9TkEUWLVwu2OZeKHiZ6JCjbzItvVC0nzwzvIBdQjMx5_OaplZafA4AJZAQqn7v4pYVP SANDBOX
         paypal.Buttons({
-            onClick: function(data, actions) {
-                if (nameField.value.length == 0) {
-                    nameErrMessage.innerHTML = "You must include a name!";
-                    nameErrMessage.hidden = false;
-                    return false;
-                } else if (nameField.value.length !== 0) {
-                    nameErrMessage.hidden = true;
-                    return true;
-                }
-            },
             style: {
                 shape: 'pill',
                 color: 'blue',
@@ -143,34 +109,26 @@
                     purchase_units: [{
                         amount: {
                             currency_code: "USD",
-                            value: '0.05'
+                            value: '154.65'
                         },
                         description: "CircuitRunners Dues",
-                        soft_descriptor: "CircuitRunners Dues",
-                        custom_id: nameField.value
+                        soft_descriptor: "CircuitRunners Dues"
                     }],
                     application_context: {
                         brand_name: 'CircuitRunners Robotics Inc.',
                         shipping_preference: 'NO_SHIPPING'
-                            // landing_page: 'BILLING'
                     }
                 });
             },
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
-                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    // alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    // document.getElementById("before-payment").hidden = true;
+                    // document.getElementById("after-payment").hidden = false;
+                    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScfrv8U-5tugcR95gi7TZEFkJ5wmRDUgvSIwH8OEiY3UpsDpw/viewform";
                 });
             }
         }).render('#paypal-button-container');
-    </script>
-    <script>
-        function validateForm() {
-            var x = document.forms["payment-form"]["custom"].value;
-            if (x == "") {
-                alert("Name must be filled out");
-                return false;
-            }
-        }
     </script>
 </body>
 
