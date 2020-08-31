@@ -26,7 +26,7 @@ paypal.Buttons({
             purchase_units: [{
                 amount: {
                     currency_code: "USD",
-                    value: '153.60'
+                    value: '153.68'
                 },
                 description: "CircuitRunners Dues",
                 soft_descriptor: "CircuitRunners Dues",
