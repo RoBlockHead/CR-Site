@@ -1,8 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CircuitRunners Website!
+
+This is the CircuitRunners Robotics Website.
+
+## Basic information
+
+This web app is written using the React.JS framework and bootstrapped using [Create React App](https://github.com/facebook/create-react-app)
+Development was conducted mostly on [repl.it](https://repl.it), a cloud programming environment. While done mostly in the cloud, the app can be edited in any environment in the future after initial development.
 
 ## Running on Repl.it
 
-Simply hit run once and start coding. Will hot reload the web view. 
+Simply hit run once and start coding. Will hot reload the web view. This is *not* the deployed website view, so it will not affect the final website.
 
 ## Running Scripts
 
