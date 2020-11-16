@@ -8,33 +8,43 @@ const Navbar = () => {
 
 	}
 	return(
-		<>
-		<div className="navbar">
-			<div className="nav-left">
-				<div className="nav-logo">
-					<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
+		<div className="nav">
+			<div className="desktop">
+				<div className="navbar">
+					<div className="nav-left">
+						<div className="nav-logo">
+							<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
+						</div>
+					</div>
+					<div className="nav-right">
+						<div className="nav-item"><a href="#">Home</a></div>
+						<div className="nav-item"><a href="#"></a></div>
+					</div>
 				</div>
 			</div>
-			<div className="nav-right">
-				<div className="nav-item"><a href="#">Home</a></div>
-				<div className="nav-item"><a href="#"></a></div>
+			<div className="mobile">
+				<div className="navbar-mobile">
+				{/* This is the hamburger menu.*/}
+					<div className="ham" onClick={toggleNav}>
+						<div id="ham1" className={navOn ? "changed" : ""}> </div>
+						<div id="ham2" className={navOn ? "changed" : ""}> </div>
+						<div id="ham3" className={navOn ? "changed" : ""}> </div>
+					</div>
+					<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
+				</div>
+				<div className={navOn ? "visible navslide-mobile" : "navslide-mobile"}>
+					<div className="container">
+						<div class="nav-item"><a href="#">Home</a></div>
+						<div class="nav-item"><a href="#">Home</a></div>
+						<div class="nav-item"><a href="#">Home</a></div>
+						<div class="nav-item"><a href="#">Home</a></div>
+						<div class="nav-item"><a href="#">Home</a></div>
+						<div class="nav-item"><a href="#">Home</a></div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div className="navbar-mobile">
-			<div className="ham" onClick={toggleNav}>
-				<div id="ham1" className={navOn ? "changed" : ""}> </div>
-				<div id="ham2" className={navOn ? "changed" : ""}> </div>
-				<div id="ham3" className={navOn ? "changed" : ""}> </div>
-			</div>
-			<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
-		</div>
-		<div className={navOn ? "visible navslide-mobile" : "navslide-mobile"}>
-			<div className="container">
-				<div class=""><a href="#">Home</a></div>
-			</div>
-		</div>
-		</>
 	);
 }
 
-export default Navbar;
+export default Navbar; 

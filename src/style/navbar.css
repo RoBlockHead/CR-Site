@@ -1,45 +1,56 @@
-.navbar, .navbar-mobile {
-	background: black;
+.nav {
+	display: flex;
+	height: 100%;
+	flex-flow: column;
+}
+.navbar, .navbar-mobile, .navslide-mobile {
+	background-color: black;
 	color: white;
-
+	font-family: Futura-Bold;
+	text-transform: uppercase;
+	height: auto;
+	display: flex;
 }
-
-.navbar a {
-	color: var(--brand-cyan);
+.nav-item a {
+	color: white;
+	text-decoration: none;
 }
-
+.navbar {
+	max-height: 10em;
+}
 .navbar .logo {
-	/* max-width: 100%; */
-	height: 5em;
+	max-height: 5em;
 	width: auto;
 	overflow: hidden;
 }
 
 @media screen and (max-width: 600px){
-	.navbar {
+	.desktop {
 		display: none;
 	}	
-	.navbar-mobile {
-		display: flex;
+	.mobile {
+		display: inherit;
 	}
 }
 @media screen and (min-width: 600px) {
 	.navbar {
-		display: block;
+		display: inherit;
 	}
 	.navbar-mobile {
 		display: none;
 	}
 }
 .navbar-mobile {
+	flex: 0 1 auto;
 	height: 5em;
 	position: fixed;
 	width: 100%;
+	z-index: 10000;
 }
-.navbar-mobile > .ham {
+.navbar-mobile .ham {
 	/* margin: auto; */
 	padding: auto;
-	position: relative;
+	position: absolute;
 	display: block;
 	align-self: center;
 	left: 5%;
@@ -65,23 +76,43 @@
 }
 
 .navbar-mobile .logo {
+	display: block;
 	align-self: center;
 	max-height:2em;
 	justify-self: center;
+	/* position: absolute; */
+	margin: 0 auto;
 }
 
 .navslide-mobile {
 	/* display: none; */
 	margin-top: 5em;
+	padding-top: 1em;
 	position: absolute;
 	transform: translateX(-100%);
 	transition: 250ms;
+	z-index: 9999;
+	text-align: left;
+	flex: 1 1 auto;
 }
 
 .navslide-mobile.visible {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	transform: translateX(0%);
-	background: #141414;
-	height: 100%;
-	width: 70%;
+	background: rgba(0,0,0,.95);
+	min-height: calc(100vh - 5em);
+	/* flex: 1 1 auto; */
+	width: 80%;
+	align-content: space-evenly;
+}
+.navslide-mobile .nav-item {
+	margin-left: 1em;
+	margin-bottom: 1.5em;
+}
+
+
+
+.box .row.footer {
+  flex: 0 1 40px;
 }
