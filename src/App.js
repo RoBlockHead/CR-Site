@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import Navbar from './components/navbar';
 import './App.css';
-import GlobalStyles from './GlobalStyles'
+import GlobalStyles from './GlobalStyles';
+import Jumbotron, {JumboText} from './components/jumbotron';
+import MainContent from './components/MainContent';
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
 		<GlobalStyles />
     <div className="App">
       <Navbar />
+			<MainContent />
     </div>
 		</>
   );

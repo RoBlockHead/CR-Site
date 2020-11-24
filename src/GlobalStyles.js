@@ -4,10 +4,14 @@ import futurabook from './assets/fonts/Futura-Book.otf'
 import futuraboldoutline from './assets/fonts/FuturaBQ-BoldOutline.otf'
 
 const style = createGlobalStyle`
+	::root{
+		
+	}
   html {
     --brand-cyan: #4df4d4;
     --brand-red: #ff0000;
-    --color-black: #000000;
+		--dark-color: #000000;
+		--light-color: #FFFFFF;
   }
 	@font-face {
     font-family: Futura-Book;
@@ -20,6 +24,25 @@ const style = createGlobalStyle`
 	@font-face {
     font-family: Futura-Bold-Outline;
     src: url(${futuraboldoutline});
+	}
+	html{
+		height: 100%;
+		margin: 0;
+	}
+	body {
+		overflow: auto;
+		height: 100%;
+		background-color: var(--dark-color);
+		color: var(--light-color);
+	}
+	.cyan {
+		color: var(--brand-cyan);
+	}
+	.red {
+		color: var(--brand-red);
+	}
+	.main {
+		padding-top: 5em;
 	}
 `;
 export default style;
