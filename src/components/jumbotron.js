@@ -1,8 +1,15 @@
 import React from 'react';
+import "./style/jumbotron.scss";
 
 const Jumbotron = (props) => {
+	const jumboStyle = {
+		backgroundImage: 'url(' + props.image + ')',
+		backgroundColor: props.color,
+		objectFit: 'cover',
+		backgroundPosition: 'center center'
+	}
 	return(
-		<div class="jumbotron">
+		<div className="jumbotron" style={jumboStyle}>
 			{props.children}
 		</div>
 	)

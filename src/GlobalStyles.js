@@ -12,7 +12,7 @@ const style = createGlobalStyle`
     --brand-red: #ff0000;
 		--dark-color: #000000;
 		--light-color: #FFFFFF;
-  }
+	}
 	@font-face {
     font-family: Futura-Book;
     src: url(${futurabook});
@@ -34,6 +34,7 @@ const style = createGlobalStyle`
 		height: 100%;
 		background-color: var(--dark-color);
 		color: var(--light-color);
+		z-index: -1;
 	}
 	.cyan {
 		color: var(--brand-cyan);
@@ -42,7 +43,12 @@ const style = createGlobalStyle`
 		color: var(--brand-red);
 	}
 	.main {
-		padding-top: 5em;
+		// padding-top: 5em;
+		// padding: 0 5em 0 5em;
+	}
+	.fixed {
+		// position: fixed;
+		overflow: hidden;
 	}
 `;
 export default style;

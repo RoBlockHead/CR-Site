@@ -1,50 +1,41 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './style/nav.scss';
 import logo_wide from '../assets/logo_wide.png';
+import { ChevronRot } from './icons';
 
-const Navbar = () => {
-	const [ navOn, setNavOn ] = useState(false)
+// Navigation menu definition at end of file
+
+	
+const Navbar = ( props ) => {
+	const [ navOn, setNavOn ] = [ props.navState, props.navSetter ]
+	const [ windowOffset, setWindowOffset ] = useState(0);
 	const toggleNav = () => {
-		setNavOn(!navOn)
+		setNavOn(!navOn); 
 	}
-	const mainNav = 
-		<>
-			<NavItem name="Home" to="#" />
-			<NavItem name="About Us" to="#" />
-			<NavFolder name="Folder">
-				<NavItem name="Folder Item" to="#" />
-				<NavItem name="Folder Item" to="#" />
-				<NavItem name="Folder Item" to="#" />
-			</NavFolder>
-			<NavItem name="Contact Us" to="#" />
-			<NavItem name="Lorem Ipsum" to="#" />
-			<NavItem name="Lorem Ipsum" to="#" />
-			<NavItem name="Lorem Ipsum" to="#" />
-			<NavItem name="Lorem Ipsum" to="#" />
-			<NavItem name="Lorem Ipsum" to="#" />
-		</>
-	return(
+return(
 		<div className="nav">
+	
 			<div className="desktop">
 				<div className="navbar">
 					<div className="nav-left">
-						<div className="nav-logo">
-							<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
-						</div>
+						<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
 					</div>
-					<nav className="nav-content">
+					<nav>
 						{mainNav}
 					</nav>
 				</div>
 			</div>
 			<div className="mobile">
-				<div className="navbar-mobile navbar">
+				<div className="navbar">
 					<Hamburger navToggle={toggleNav} navState={navOn} />
 					<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
 				</div>
-				<NavSlide navOn={navOn} navSetter={setNavOn}>
+				
+				<NavSlide navState={navOn} navSetter={setNavOn} >
 					{mainNav}
 				</NavSlide>
+				
 			</div>
 		</div>
 	);
@@ -58,7 +49,7 @@ const NavFolder = (props) => {
 		setOpen(!open)
 	}
 	return(
-		<div className={ open ? "nav-folder item open" : "nav-folder item" }>
+		<div className={ open ? "folder item open" : "folder item" }>
 			<a className="name" onClick={openFolder} href="#">{props.name}</a>
 			<div className="items">
 			{props.children}
@@ -69,7 +60,7 @@ const NavFolder = (props) => {
 
 const NavItem = (props) => {
 	return(
-		<div class="item"><a href={props.to} >{props.name}</a></div>
+		<div className="item"><NavLink to={props.to} >{props.name}</NavLink></div>
 	)
 }
 const Hamburger = (props) => {
@@ -83,12 +74,27 @@ const Hamburger = (props) => {
 	)
 }
 
-const NavSlide = (props) => {
+export const NavSlide = (props) => {
 	return(
-		<div className={props.navOn ? "visible navside side" : "navside side"}>
-			<nav className="container">
+		<div className={props.navState ? "visible side" : "side"} >
+			<nav className="container" >
 				{props.children}
 			</nav>
 		</div>
 	)
 }
+
+const mainNav = 
+	<>
+		<NavItem name="Home" to="/" />
+		<NavItem name="About Us" to="/about" />
+		<NavItem name="Sponsors" to="/sponsors" />
+		<NavFolder name="Teams">
+			<NavItem name="FRC 1002" to="#" />
+			<NavItem name="FTC 1002" to="#" />
+			<NavItem name="FTC 11347" to="#" />
+		</NavFolder>
+		<NavItem name="Contact Us" to="#" />
+		<NavItem name="Lorem Ipsum" to="#" />
+		<NavItem name="Lorem Ipsum" to="#" />
+	</>
