@@ -15,7 +15,7 @@ $logoheight: 2em;
 	background-color: var(--dark-color);
 	opacity: .95;
 	color: var(--light-color);
-	font-family: Futura-Bold;
+	font-family: futura-pt-bold;
 	text-transform: uppercase;
 	position: sticky;
 	top: 0;
@@ -59,7 +59,7 @@ $logoheight: 2em;
 			display: flex;
 			width: 100%;
 			// padding-right: 5em;
-			justify-content: space-between;
+			// justify-content: space-between;
 			// align-content: space-between;
 			// flex-basis: content;
 			flex-direction: row;
@@ -81,9 +81,6 @@ $logoheight: 2em;
 					animation-name: growDown;
 					animation-timing-function: ease-in-out;
 					animation-fill-mode: forwards;
-					a {
-						
-					}
 				}
 				> .item {
 					padding-inline-start: 0em;

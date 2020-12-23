@@ -1,9 +1,24 @@
+$padding-bp: 900px;
+@mixin padding {
+    @media screen and (max-width: $padding-bp) {
+        padding-top: 15vw;
+        padding-bottom:  15vw;
+    }
+    @media screen and (min-width: $padding-bp) {
+        padding-top: 15vw;
+        padding-bottom:  15vw;
+    }
+}
 .jumbotron {
+	@include padding;
 	background: var(--dark-color);
 	padding: 2.5em 1.5em;
-
+	h1 {
+		font-size: 2.5em;
+	}
 	h1,h2,h3,h4,h5,h6 {
 		margin-block-start: 0;
-		margin-block-end: 0
+		margin-block-end: 0;
+		text-shadow: 2px 2px 2px black;
 	}
 }

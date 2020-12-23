@@ -3,7 +3,10 @@ import "./style/footer.scss";
 import facebook from '../assets/icons/facebook.svg';
 import twitter from '../assets/icons/twitter.svg';
 import youtube from '../assets/icons/youtube.svg';
-const Footer = () => {
+interface FooterProps {
+	
+}
+const Footer: React.FC<FooterProps> = (props: FooterProps) => {
 
 	return(
 		<footer className="footer">
@@ -12,7 +15,7 @@ const Footer = () => {
 
 				</div>
 				<div className="col">
-					<h3>&copy; 2020 CircuitRunners Robotics Inc.</h3>
+					<span class="copyright">&copy; 2021 CircuitRunners Robotics Inc.</span>
 				</div>
 				<div className="col">
 					<div className="social">

@@ -6,8 +6,12 @@ import { ChevronRot } from './icons';
 
 // Navigation menu definition at end of file
 
-	
-const Navbar = ( props ) => {
+interface NavProps {
+	navState: boolean;
+	navSetter: Function;
+	navImage?: string;
+}
+const Navbar: React.FC<NavProps> = ( props: NavProps ) => {
 	const [ navOn, setNavOn ] = [ props.navState, props.navSetter ]
 	const [ windowOffset, setWindowOffset ] = useState(0);
 	const toggleNav = () => {
