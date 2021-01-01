@@ -1,0 +1,21 @@
+.yeet {
+    --yeet: 100;
+}
+.contactForm {
+    background-color: #0F0F0F;
+    padding: 2.5em;
+    border-radius: 1.5em;
+    width: auto;
+    display: flex;
+    textarea {
+        width: 100%;
+    }
+    input.required::after{
+        color: var(--brand-red);
+        content: "*";
+    }
+    input,textarea {
+        padding: .5em;
+        border-radius: .75em;
+    }
+}

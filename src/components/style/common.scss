@@ -1,0 +1,37 @@
+$cyan:  #4df4d4;
+$red:   #ff0000;
+$black: #000000;
+$white: #FFFFFF;
+:root {
+    font-family: futura-pt;
+    font-size: 16px;
+}
+html{
+    height: 100%;
+    margin: 0;
+}
+body {
+    overflow: auto;
+    height: 100%;
+    background-color: $black;
+    color: $white;
+    z-index: -1;
+    font-family: futura-pt;
+}
+.cyan {
+    color: $cyan;
+}
+.red {
+    color: $red;
+}
+
+.fixed {
+    // position: fixed;
+    overflow: hidden;
+}
+.content a {
+    color: $cyan;
+    &:visited {
+        color: #3e70db;
+    }
+}
