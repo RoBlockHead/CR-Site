@@ -1,0 +1,36 @@
+.footer {
+  background-color: #141414;
+}
+.footer .container {
+  display: flex;
+  padding: 2.5em;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row;
+  overflow-wrap: normal;
+}
+.footer .container .col {
+  width: 100%;
+  overflow: hidden;
+  flex-basis: 100%;
+  align-self: center;
+}
+.footer .container .col .social {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+}
+.footer .container .col .social a {
+  padding-left: 1em;
+  padding-right: 1em;
+  filter: invert(1);
+  display: inline-block;
+  justify-content: space-evenly;
+}
+.footer .container .col .social a img {
+  width: 3em;
+}
+.footer .container .col .copyright {
+  font-weight: bold;
+  font-size: 1.125em;
+}

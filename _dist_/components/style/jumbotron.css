@@ -1,0 +1,36 @@
+@media screen and (min-width: 925px) {
+  .jumbotron .JumboText {
+    font-size: 4em;
+  }
+  .jumbotron .JumboTagline {
+    font-size: 1.6em;
+  }
+}
+.jumbotron {
+  background: var(--dark-color);
+  padding: 2.5em 1.5em;
+}
+@media screen and (max-width: 900px) {
+  .jumbotron {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  .jumbotron {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+}
+.jumbotron h1 {
+  font-size: 2.5em;
+}
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-shadow: 2px 2px 2px black;
+  font-family: futura-pt-bold;
+}
+.jumbotron .JumboTagline {
+  text-transform: uppercase;
+}
