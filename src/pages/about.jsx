@@ -2,10 +2,11 @@ import React from 'react';
 import Jumbotron, { JumboText } from '../components/jumbotron'
 import Content from '../components/content';
 import ContactForm from '../components/contactForm';
+import img1 from '../assets/Backdrop1.png'
 const About = () => {
 	return(
 		<div className="about">
-			<Jumbotron>
+			<Jumbotron image={img1} >
 				<JumboText>About Us</JumboText>
 			</Jumbotron>
 			<Content>
@@ -37,7 +38,13 @@ const About = () => {
 					strong outreach base, our competitive spirit, and our tight-knit community that 
 					spans decades.
 				</p>
-				<ContactForm />
+				<h3>Follow Us on Social Media!</h3>
+				<p>
+					<a href="https://facebook.com/circuitrunners">@circuitrunners</a> on Facebook<br />
+					<a href="https://twitter.com/circuitrunners">@circuitrunners</a> on Twitter<br />
+					<a href="https://instagram.com/circuitrunners">@circuitrunners</a> on instagram<br />
+				</p>
+				{/* <ContactForm /> */}
 			</Content>
 			
 		</div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './style/nav.scss';
 import logo_wide from '../assets/logo_wide.png';
@@ -11,14 +11,32 @@ interface NavProps {
 	navSetter: Function;
 	navImage?: string;
 }
+
 const Navbar: React.FC<NavProps> = ( props: NavProps ) => {
 	const [ navOn, setNavOn ] = [ props.navState, props.navSetter ]
 	const [ windowOffset, setWindowOffset ] = useState(0);
+	const node: React.MutableRefObject = useRef();
 	const toggleNav = () => {
-		setNavOn(!navOn); 
+		setNavOn(!navOn);
 	}
-return(
-		<div className="nav">
+	// useEffect(() => {
+	// 	if(navOn){
+	// 		document.addEventListener("click", handleClick);
+	// 		return;
+	// 	}
+	
+	// 	return () => {
+	// 	  document.removeEventListener("click", handleClick);
+	// 	};
+	//   }, []);
+	// const handleClick = (e: MouseEvent) => {
+	// 	if (node.current.contains(e.target)) {
+	// 		return;
+	// 	}
+	// 	toggleNav();
+	// }
+	return(
+		<div className="nav" ref={node}>
 	
 			<div className="desktop">
 				<div className="navbar">
@@ -30,13 +48,13 @@ return(
 					</nav>
 				</div>
 			</div>
-			<div className="mobile">
+			<div className="mobile" >
 				<div className="navbar">
 					<Hamburger navToggle={toggleNav} navState={navOn} />
 					<img src={logo_wide} className="logo" alt="CircuitRunners Logo" />
 				</div>
 				
-				<NavSlide navState={navOn} navSetter={setNavOn} >
+				<NavSlide navState={navOn} navSetter={setNavOn}>
 					{mainNav}
 				</NavSlide>
 				
@@ -92,7 +110,7 @@ const mainNav =
 	<>
 		<NavItem name="Home" to="/" />
 		<NavItem name="About Us" to="/about" />
-		<NavItem name="Sponsors" to="/sponsors" />
+		{/* <NavItem name="Sponsors" to="/sponsors" />
 		<NavFolder name="Teams">
 			<NavItem name="FRC 1002" to="#" />
 			<NavItem name="FTC 1002" to="#" />
@@ -100,5 +118,5 @@ const mainNav =
 		</NavFolder>
 		<NavItem name="Contact Us" to="#" />
 		<NavItem name="Lorem Ipsum" to="#" />
-		<NavItem name="Lorem Ipsum" to="#" />
+		<NavItem name="Lorem Ipsum" to="#" /> */}
 	</>

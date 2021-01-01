@@ -29,3 +29,9 @@ body {
     // position: fixed;
     overflow: hidden;
 }
+.content a {
+    color: $cyan;
+    &:visited {
+        color: #3e70db;
+    }
+}

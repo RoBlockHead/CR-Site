@@ -11,6 +11,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
+    "@paypal/react-paypal-js": "^3.0.3",
     "@snowpack/plugin-babel": "^2.1.5",
     "@snowpack/plugin-sass": "^1.2.0",
     "react": "^17.0.1",
